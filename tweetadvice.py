@@ -26,4 +26,7 @@ api = twitter.Api(consumer_key=os.environ['T_CONSUMER_KEY'],
 api.PostUpdates(quote)
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cde068a08750e75680f011c76ec9f389cefc560c

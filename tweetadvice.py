@@ -29,8 +29,3 @@ api = twitter.Api(consumer_key=os.environ['T_CONSUMER_KEY'],
 api.PostUpdates(quote)
 
 
-
-#attempt to shorten it?
-#post a random quote (4 times a day?)
-#delete the random quote from the source file?
-

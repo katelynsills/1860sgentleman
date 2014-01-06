@@ -9,7 +9,6 @@ guide = open('gentsguide.txt', 'r').read()
 
 #divide the source file up into tweetable sentences
 guide = re.split('\.|\?', guide)
-print guide
 
 #pick a random quote
 max = len(guide)
@@ -19,8 +18,6 @@ while length > 140 or length < 1:
 	length = len(quote)
 
 print quote
-print len(quote)
-
 
 api = twitter.Api(consumer_key=os.environ['T_CONSUMER_KEY'],
 				  consumer_secret=os.environ['T_CONSUMER_SECRET'],
@@ -29,8 +26,4 @@ api = twitter.Api(consumer_key=os.environ['T_CONSUMER_KEY'],
 api.PostUpdates(quote)
 
 
-
-#attempt to shorten it?
-#post a random quote (4 times a day?)
-#delete the random quote from the source file?
 
